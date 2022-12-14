@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  background: rgb(56, 167, 157);
+}
+
+#btn {
+  display: inline-block;
+  padding: 15px 80px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 0, 234);
+}
+
+#btn:hover {
+  background: rgba(0,0,0,0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+#btn:active {
+  background: #db3452;
+  border-color: #db3452;
+}
