@@ -15,3 +15,5 @@
 
 //Execute
 $('#btn').useSound('click', '#btnsound');
+//Execute
+$('#btn2').useSound('click', '#btnsound2');
