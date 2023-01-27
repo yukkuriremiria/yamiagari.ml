@@ -96,6 +96,10 @@ body {
 	-webkit-transition-delay: 0.4s;
 					transition-delay: 0.4s;
 }
+.cp_sidebarmenu:hover .cp_sidenav li:nth-of-type(5) span {
+	-webkit-transition-delay: 0.4s;
+					transition-delay: 0.4s;
+}
 .cp_sidebarmenu:hover .cp_sidenav span {
 	text-indent: 0;
 }
