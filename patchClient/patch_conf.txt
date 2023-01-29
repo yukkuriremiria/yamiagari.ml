@@ -1,0 +1,103 @@
+# ==============================================================
+#  設定ファイル
+# ==============================================================
+# ------------------------------------------------
+#  クライアント側に最低限必要な設定
+#
+# server      接続先サーバー名(http://は不要)
+#             「:」でポート指定可能。省略時 80
+# server_ini  サーバー側設置設定ファイル名 (省略時、ローカル側設定のみ使用)
+
+server			nanami.xrea.jp
+server_ini		/patchClient/patch_conf.txt
+
+# ------------------------------------------------
+# info_url  パッチ情報htmlのパス
+# patch_txt MD5ハッシュリストのパス
+# patchdir  パッチファイルの置いてあるディレクトリ
+
+info_url		/patchClient/index.html
+patch_txt		/patchClient20170614/patch.txt
+patchdir		/patchClient20170614/patch/
+
+# ------------------------------------------------
+# exename   ゲーム開始ボタンで起動するEXE名
+#           1sak1 などを付ける事ができますので
+#           クライアント単体で起動させたくない場合は
+#           Sakexe.exeをDiffパッチャーで1sak1必須にしておくといいでしょう。
+#
+# patch_required  パッチ鯖に接続失敗時は起動不可(0:no 1:yes)
+
+exename			RagexeRina.exe
+patch_required	1
+
+
+# -------------------------------------------------
+# 公式クライアントのバージョンチェック設定
+# 不要なら削除すればスルーします。
+#
+# ※海外のパッチ必須の鯖なら海外公式鯖に合わせて変更してください。
+#
+# ro_patch_inf patch.infのファイル名
+# ro_server    patch.txtの置いてあるサーバー
+# ro_patch_txt patch.txtの置いてあるディレクトリ
+
+#ro_patch_inf	patch.inf
+#ro_server	httppatch.ragnarokonline.jp
+#ro_patch_txt	/patch30/patchbbs/patch2.txt
+#ro_repack		Ragnarok.exe /repack
+
+
+# ================================================
+#  カスタマイズオプション
+
+# ------------------------------------------------
+# app_name  タスクバーに表示される名前
+# app_title タイトルバーに表示される名前
+
+app_name		patchClient
+app_title		Patch Client
+
+# ------------------------------------------------
+# form_skin  スキンの画像ファイル名(bmp,png,gif)
+# start_img  開始ボタン画像ファイル名(bmp,png,gif)
+# exit_img   終了ボタン画像ファイル名(bmp,png,gif)
+# def_html   URL読込み前のHTMLファイル名(html,htm)
+#            しばらくお待ちください的なもの。
+
+form_skin		patchBox\skin.gif
+start_img		patchBox\start.png
+exit_img		patchBox\exit.png
+def_html		patchBox\default.html
+
+# ------------------------------------------------
+# スキンに載せるボタンやWebBrowserの位置情報(ピクセル値)
+# ボタンの幅と高さはボタン画像から自動で取得。
+# 開始ボタンは横 4個分(Default/MouseOver/MouseDown/Disabled)
+# 終了ボタンは横 3個分(Default/MouseOver/MouseDown)
+#
+# browser_left    WebBroeserの座標(左)
+# browser_top     WebBroeserの座標(上)
+# browser_width   WebBroeserの幅
+# browser_height  WebBroeserの高さ
+# startbtn_left   開始ボタンの座標(左)
+# startbtn_top    開始ボタンの座標(上)
+# exitbtn_left    終了ボタンの座標(左)
+# exitbtn_top     終了ボタンの座標(上)
+# prog_left       プログレスバーの座標(左)
+# prog_top        プログレスバーの座標(上)
+# prog_width      プログレスバーの幅
+# prog_height     プログレスバーの高さ
+
+browser_left	21
+browser_top		171
+browser_width	509
+browser_height	267
+startbtn_left	20
+startbtn_top	485
+exitbtn_left	130
+exitbtn_top		485
+prog_left		21
+prog_top		449
+prog_width		510
+prog_height		16

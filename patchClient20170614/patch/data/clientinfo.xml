@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<clientinfo>
+<servicetype>japan</servicetype>
+<servertype>primary</servertype>
+<readfolder></readfolder>
+
+<connection>
+<display>ぴぃまんさば</display>
+<balloon>No.1testServer</balloon>
+<address>127.0.0.1</address>
+<port>6900</port>
+<version>10</version>
+<langtype>2</langtype>
+</connection>
+
+<connection>
+<display>管理者用</display>
+<balloon>No.1testServer</balloon>
+<address>localhost</address>
+<port>6900</port>
+<version>10</version>
+<langtype>2</langtype>
+</connection>
+
+<connection>
+<display>Local Server</display>
+<balloon>Local Host</balloon>
+<address>localhost</address>
+<port>6900</port>
+<version>10</version>
+<langtype>2</langtype>
+<aid>
+<admin>20091122Ro</admin>
+</aid>
+</connection>
+
+
+</clientinfo>
