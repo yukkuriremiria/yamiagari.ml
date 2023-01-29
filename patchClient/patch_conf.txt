@@ -28,7 +28,7 @@ patchdir		/patchClient20170614/patch/
 #
 # patch_required  パッチ鯖に接続失敗時は起動不可(0:no 1:yes)
 
-exename			RagPatcher.exe
+exename			Ragexepi-man.exe
 patch_required	0
 
 
