@@ -8,7 +8,7 @@
 #             「:」でポート指定可能。省略時 80
 # server_ini  サーバー側設置設定ファイル名 (省略時、ローカル側設定のみ使用)
 
-server			nanami.xrea.jp
+server			yamiagari.ml
 server_ini		/patchClient/patch_conf.txt
 
 # ------------------------------------------------
@@ -28,8 +28,8 @@ patchdir		/patchClient20170614/patch/
 #
 # patch_required  パッチ鯖に接続失敗時は起動不可(0:no 1:yes)
 
-exename			RagexeRina.exe
-patch_required	1
+exename			RagPatcher.exe
+patch_required	0
 
 
 # -------------------------------------------------
