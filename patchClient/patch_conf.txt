@@ -55,8 +55,8 @@ patch_required	0
 # app_name  タスクバーに表示される名前
 # app_title タイトルバーに表示される名前
 
-app_name		patchClient
-app_title		Patch Client
+app_name		ぴぃまんさばの蔵
+app_title		ぴぃまんさばの蔵
 
 # ------------------------------------------------
 # form_skin  スキンの画像ファイル名(bmp,png,gif)
@@ -65,10 +65,10 @@ app_title		Patch Client
 # def_html   URL読込み前のHTMLファイル名(html,htm)
 #            しばらくお待ちください的なもの。
 
-form_skin		patchBox\skin.gif
-start_img		patchBox\start.png
-exit_img		patchBox\exit.png
-def_html		patchBox\default.html
+form_skin		PatchClientBox\skin.gif
+start_img		PatchClientBox\start.png
+exit_img		PatchClientBox\exit.png
+def_html		PatchClientBox\default.html
 
 # ------------------------------------------------
 # スキンに載せるボタンやWebBrowserの位置情報(ピクセル値)
