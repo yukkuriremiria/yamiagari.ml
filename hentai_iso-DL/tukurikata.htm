@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<head>
+  <meta charset="UTF-8">
+  <title>yamagari - 変態メディアの作り方的な</title>
+
+
+
+<big><big><big>~~~作り方（クソ雑）~~~</big><br><br>
+
+まずはじめに、win10とwin11のisoを用意します<br>
+そうしたら、iso内の/sources/install.wim(.esd)を作業フォルダにコピーしてください(両方のwim)<br>
+片方は、適当にリネームしてください<br>
+次に、cmdを起動します<br>
+そして、以下のコマンドでwimのインデックス番号を確認します(自分でまとめたいエディションのやつを選んでね)<br>
+<br>
+DISM /Get-WimInfo /WimFile:(WIM/ESDのファイルパス)
+<br>
+使いたいエディションの番号をメモるか覚えてくださいそうしたら以下のコマンドで結合します
+
+<br>
+DISM /Export-Image /sourceimagefile:(エクスポート元のWIM/ESDのファイルパス) /sourceindex:(インデックス番号) /destinationimagefile:(エクスポート先のWIMのファイルパス) /compress:max /checkintegrity
+<br>
+
+雑ですがなんとなく分かってくださいｗ<br>
+<br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+ちなここからDLできます(は？)
+<br>
+<br>
+<a href="index.html">DL</a>
+
+
+
+
+
+
+
+<meta property="og:title" content="yamagari - 変態メディアの作り方的な " />
+<meta property="og:description" content="変態メディアの作り方的な" />
+<meta property="og:site_name" content="クソ雑" />
