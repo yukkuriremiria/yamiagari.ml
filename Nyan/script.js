@@ -19,3 +19,9 @@ $('#btn').useSound('click', '#btnsound');
 $('#btn2').useSound('click', '#btnsound2');
 //Execute
 $('#btn3').useSound('click', '#btnsound3');
+//Execute
+$('#btn3').useSound('click', '#btnsound4');
+//Execute
+$('#btn3').useSound('click', '#btnsound5');
+//Execute
+$('#btn3').useSound('click', '#btnsound6');
