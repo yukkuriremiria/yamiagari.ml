@@ -69,3 +69,72 @@ body {
   border-color: rgb(0, 119, 255);
   color: rgb(0, 225, 255);
 }
+
+/* 4 */
+#btn4:active {
+  background: #db3452;
+  border-color: #db3452;
+}
+
+#btn4 {
+  display: inline-block;
+  padding: 15px 80px;
+  font-size: 94px;
+  color: rgba(255, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid rgb(255, 0, 234);
+}
+
+
+#btn4:hover {
+  background: rgba(0,0,0,0.1);
+  border-color: rgb(0, 119, 255);
+  color: rgb(0, 225, 255);
+}
+
+/* 5 */
+#btn5:active {
+  background: #db3452;
+  border-color: #db3452;
+}
+
+#btn5 {
+  display: inline-block;
+  padding: 15px 80px;
+  font-size: 94px;
+  color: rgba(255, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid rgb(255, 0, 234);
+}
+
+
+#btn5:hover {
+  background: rgba(0,0,0,0.1);
+  border-color: rgb(0, 119, 255);
+  color: rgb(0, 225, 255);
+}
+
+/* 6 */
+#btn6:active {
+  background: #db3452;
+  border-color: #db3452;
+}
+
+#btn6 {
+  display: inline-block;
+  padding: 15px 80px;
+  font-size: 94px;
+  color: rgba(255, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 4px solid rgb(255, 0, 234);
+}
+
+
+#btn6:hover {
+  background: rgba(0,0,0,0.1);
+  border-color: rgb(0, 119, 255);
+  color: rgb(0, 225, 255);
+}
