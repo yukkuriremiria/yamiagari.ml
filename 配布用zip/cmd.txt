@@ -1,0 +1,60 @@
+ぴぃまん★ぼっと音楽 コマンド一覧:
+
+.help - コマンド一覧を表示します。
+.about - ボットに関する情報を表示します
+.ping - ボットのレイテンシをチェックします
+.settings - Botの設定を表示します
+
+  General:
+
+.serverinfo - サーバーに関する情報を表示します
+.cache - キャッシュに保存されている曲を表示します。
+
+  Music:
+
+.lyrics [曲名] - 曲の歌詞を表示します
+.nowplaying - 現在再生中の曲を表示します
+.play <title|URL|subcommand> - 指定された曲を再生します
+.playlists - 利用可能な再生リストを表示します
+.mylist <append|delete|make|all> - 自分専用の再生リストを管理
+.queue [ページ] - 再生待ちの楽曲一覧を表示します
+.remove <再生待ち番号|すべて|ALL> - 再生待ちから曲を削除します
+.search <query> - 指定した文字列を使用してYouTube上の動画を検索します。
+.scsearch <query> - 指定した文字列を使用してSoundcloudで検索します
+.ncsearch <検索語句> - 指定した文字列を使用してニコニコ動画上の動画を検索します。
+.shuffle - 追加した曲をシャッフル
+.skip - 現在流れている曲のスキップをリクエスト
+.volume [0-150] - 音量を設定または表示します
+
+  DJ:
+
+.forceremove <ユーザー> - 指定したユーザーのエントリーを再生待ちから削除します
+.forceskip - 現在の曲をスキップします
+.next - リピートモードが有効な場合、再生待ちから削除せずに現在の曲をスキップします
+.movetrack <from> <to> - 再生待ちの曲の再生順を変更します
+.pause - 現在の曲を一時停止します
+.playnext <title|URL> - 次に再生する曲を指定します
+.repeat [all|on|single|one|off] - 再生待ち楽曲の再生が終了したら曲を再追加します
+.skipto <position> - 指定された曲にスキップします
+.playlist <append|delete|make> - 再生リスト管理
+.stop - 現在の曲を停止して再生待ちを削除します。
+
+  Admin:
+
+.prefix <プレフィックス|NONE> - サーバー固有のプレフィックスを設定します
+.setdj <役割名|NONE|なし> - ボットコマンドを使用できる役割DJを設定します。
+.setskip <0 - 100> - サーバー固有のスキップ率を設定
+.settc <チャンネル名|NONE|なし> - ボットのコマンドチャンネルを設定します
+.setvc <チャンネル名|NONE|なし> - 再生に使用する音声チャンネルを固定します。
+.autoplaylist <name|NONE|なし> - サーバーの自動再生リストを設定
+.slist - ボットコマンドを使用できる役割DJを設定します。
+
+  Owner:
+
+.debug - デバッグ情報を表示します
+.setavatar <url> - ボットのアバターを設定します
+.setgame [action] [game] - ボットがプレイしているゲームを設定します
+.setname <name> - ボットの名前を設定します。
+.setstatus <status> - ボットが表示するステータスを設定します
+.publist <append|delete|make|all> - 再生リスト管理
+.shutdown - 安全にシャットダウン
