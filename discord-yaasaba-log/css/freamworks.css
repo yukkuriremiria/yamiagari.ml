@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root{
+    --sd1-color: #1e1f22;
+    --sd2-color: #2b2d31;
+    --bg-color: #313338;
+    --sc-color: #b5bac1;
+    --tx-color: #949BA4;
+    --hov-color: #35373c;
+    --hov2-color: #3d3e45;
+    --gr-color: #23a559;
+    --lo-color: #5865f2;
+    --ff-color: #fff;
+    --bg2-color: #232428;
+    --main-transition: .4s;
+}
+
+/* Start Scroll-Bar */
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--bg2-color);
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--sd2-color);
+}
+/* End Scroll-Bar */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul,ol,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.shadow{
+    -moz-box-shadow:
+    0 1px 0 hsl(0 calc(1 * 0%) 0.8%/0.2),
+    0 1.5px 0 hsl(240 calc(1 * 7.7%) 2.5%/0.05),
+    0 2px 0 hsl(0 calc(1 * 0%) 0.8%/0.05);
+    -webkit-box-shadow:
+    0 1px 0 hsl(0 calc(1 * 0%) 0.8%/0.2),
+    0 1.5px 0 hsl(240 calc(1 * 7.7%) 2.5%/0.05),
+    0 2px 0 hsl(0 calc(1 * 0%) 0.8%/0.05);
+    box-shadow:
+    0 1px 0 hsl(0 calc(1 * 0%) 0.8%/0.2),
+    0 1.5px 0 hsl(240 calc(1 * 7.7%) 2.5%/0.05),
+    0 2px 0 hsl(0 calc(1 * 0%) 0.8%/0.05);
+}

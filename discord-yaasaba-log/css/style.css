@@ -1,0 +1,385 @@
+.page{
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+}
+/*
+=====================================
+===========START SERVER SIDE=========
+=====================================
+*/
+.server-side{
+    background-color: var(--sd1-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.server-side  .image-div{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.server-side .direct-message,
+.server-side .add-server,
+.server-side .exploer-server{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+.server-side .direct-message{
+    color: var(--sc-color);
+}
+.server-side .add-server,
+.server-side .exploer-server{
+    color: var(--gr-color);
+}
+.server-side .server-icons .image-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+.server-side .server-icons .image-div.access img,
+.server-side .server-icons .image-div img:hover,
+.server-side .direct-message:hover,
+.server-side .add-server:hover,
+.server-side .exploer-server:hover{
+    border-radius: 15px;
+}
+.server-side .direct-message:hover{
+    background-color: var(--lo-color);
+    color: var(--ff-color);
+}
+.server-side .add-server:hover,
+.server-side .exploer-server:hover{
+    background-color: var(--gr-color);
+    color: var(--ff-color);
+}
+.server-side .direct-message::before,
+.access::after,.notice::after{
+    content: "";
+    position: absolute;
+}
+.server-side .direct-message::before{
+    width: 35px;
+    height: 2px;
+    border-radius: 95px;
+    background-color: var(--bg-color);
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+}
+.access::after{
+    width: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 45px;
+    background-color: var(--sc-color);
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.notice::after{
+    width: 10px;
+    height: 10px;
+    background-color: var(--sc-color);
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 40%;
+}
+/*
+======================================
+===========END SERVER SIDE============
+======================================
+======================================
+===========START SERVER ROOMS=========
+======================================
+*/
+.page .server-rooms{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    background-color: var(--sd2-color);
+    color: var(--tx-color);
+}
+.server-rooms .server-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+    position: relative;
+    min-height: 48px;
+    max-height: 50px;
+}
+.server-rooms .server-name:hover{
+    background-color: var(--hov-color);
+}
+.server-rooms .server-name h4{
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--ff-color);
+}
+.server-rooms .rooms{
+    overflow-y: scroll;
+}
+.server-rooms .rooms::-webkit-scrollbar{
+    display: none;
+}
+.server-rooms .rooms:hover::-webkit-scrollbar{
+    display: block;
+}
+.server-rooms .rooms .list-rooms{
+    min-height: 1000px;
+}
+.server-rooms .rooms .list-rooms ol{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.server-rooms .rooms .list-rooms ol .li-room{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.server-rooms .rooms .list-rooms ol .li-room > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 6px;
+}
+.server-rooms .rooms .list-rooms ol .li-room a{
+    color: inherit;
+}
+.server-rooms .rooms .list-rooms ol .li-room div > .add-user{
+    display: none;
+    transition: var(--main-transition);
+    font-size: 12px;
+}
+.server-rooms .rooms .list-rooms ol .li-room > div:hover{
+    background-color: var(--hov-color);
+}
+.server-rooms .rooms .list-rooms ol .li-room:hover .add-user{
+    display: block;
+}
+.server-rooms .rooms .list-rooms ol .head-ol{
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.server-rooms .rooms .list-rooms ol .head-ol i{
+    font-size: 8px;
+}
+.server-rooms .profile-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: var(--bg2-color);
+}
+.server-rooms .profile-control .profile{
+    display: flex;
+    cursor: pointer;
+    transition: .2s;
+    padding: 5px;
+    padding-right: calc(45px - 10px);
+    border-radius: 5px;
+}
+.server-rooms .profile-control .profile > img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.server-rooms .profile-control .profile .profile-info{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.server-rooms .profile-control .profile .profile-info .username{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--ff-color);
+}
+.server-rooms .profile-control .profile .profile-info .id-profile{
+    font-weight: lighter;
+}
+.server-rooms .profile-control .control{
+    display: inline-flex;
+    column-gap: 5px;
+}
+.server-rooms .profile-control .control > a{
+    color: var(--tx-color);
+    transition: .2s;
+    padding: 5px;
+    border-radius: 5px;
+}
+.server-rooms .profile-control .profile:hover,
+.server-rooms .profile-control .control > a:hover{
+    background-color: var(--hov2-color);
+}
+/*
+=====================================
+===========END SERVER ROOMS==========
+=====================================
+=====================================
+===========START SERVER CHAT=========
+=====================================
+*/
+.page .server-chat{
+    background-color: var(--bg-color);
+    flex: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+    /* START CHAT HEAD */
+.server-chat .chat-head{
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    max-height: 50px;
+}
+.server-chat .chat-head .title-chat{
+    display: flex;
+    pointer-events: none;
+}
+.server-chat .chat-head .title-chat > h4{
+    margin: 0;
+    margin-left: 10px;
+    color: var(--ff-color);
+}
+.server-chat .chat-head .icons-chat{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.server-chat .chat-head .title-chat > i,
+.server-chat .chat-head a > i{
+    color: var(--tx-color);
+    font-size: 19px;
+}
+.server-chat .chat-head .search-div{
+    position: relative;
+}
+.server-chat .chat-head .search-div::after{
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    font-weight: 900;
+    right: 6px;
+    font-size: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--tx-color);
+}
+.server-chat .chat-head .search-div > input{
+    width: 150px;
+    border-radius: 3px;
+    background-color: var(--sd1-color);
+    padding: 11px;
+    height: 20px;
+    transition: var(--main-transition);
+}
+.server-chat .chat-head .search-div > input:focus{
+    width: 225px;
+    color: var(--tx-color);
+}
+    /* END CHAT HEAD */
+    /* START CHAT BODY */
+.server-chat .chat-body{
+    overflow-y: scroll;
+}
+.server-chat .chat-body .chat{
+    min-height: 1000px;
+}
+.server-chat .chat-body .chat .content{
+    display: flex;
+    position: relative;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+.server-chat .chat-body .chat .content:hover{
+    background-color: var(--hov-color);
+}
+.server-chat .chat-body .chat .content .toolbar{
+    position: absolute;
+    right: 40px;
+    background-color: var(--sd1-color);
+    padding: 5px;
+    border-radius: 3px;
+    top: -20px;
+    display: none;
+    transition: var(--main-transition);
+}
+.server-chat .chat-body .chat .content .toolbar > i{
+    cursor: pointer;
+    color: var(--tx-color);
+    font-size: 15px;
+    padding: 5px;
+}
+.server-chat .chat-body .chat .content:hover .toolbar{
+    display: block;
+}
+.server-chat .chat-body .chat .content > img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.server-chat .chat-body .chat .content .text .name{
+    color: var(--ff-color);
+    cursor: pointer;
+}
+.server-chat .chat-body .chat .content .text .message{
+    margin-top: 10px;
+    color: var(--tx-color);
+    line-height: 1.5;
+}
+    /* END CHAT BODY */
+    /* START CHAT FOOTER*/
+.chat-footer{
+    margin: 15px;
+    background-color: var(--hov2-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 5px;
+}
+.chat-footer a > i{
+    padding: 5px;
+    color: var(--sc-color);
+    font-size: 20px;
+}
+.chat-footer input[type="text"]{
+    flex: 1;
+    background-color: inherit;
+}
+.chat-footer input[type="text"]::placeholder{
+    font-size: 17px;
+    color: var(--tx-color);
+}
+.chat-footer input[type="text"]:focus{
+    color: var(--tx-color);
+}
+    /* END CHAT FOOTER*/
+/*
+=====================================
+===========END SERVER CHAT===========
+=====================================
+*/
